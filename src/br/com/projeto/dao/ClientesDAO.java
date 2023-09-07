@@ -7,6 +7,7 @@ package br.com.projeto.dao;
 
 import br.com.projeto.jdbc.ConnectionFactory;
 import br.com.projeto.model.Clientes;
+import br.com.projeto.model.WebServiceCep;
 //import br.com.projeto.model.WebServiceCep;
 
 import java.sql.Connection;
@@ -296,7 +297,7 @@ public class ClientesDAO {
 
     //Busca Cep
     
-    /*public Clientes buscaCep(String cep) {
+    public Clientes buscaCep(String cep) {
        
         WebServiceCep webServiceCep = WebServiceCep.searchCep(cep);
        
@@ -316,7 +317,7 @@ public class ClientesDAO {
             return null;
         }
 
-    }*/
+    }
     
    
 }

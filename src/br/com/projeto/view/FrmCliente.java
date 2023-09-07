@@ -7,9 +7,15 @@ package br.com.projeto.view;
 import br.com.projeto.dao.ClientesDAO;
 import br.com.projeto.model.Clientes;
 import br.com.projeto.model.Utilitarios;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.EventQueue;
 
 /**
  *
@@ -202,6 +208,16 @@ public class FrmCliente extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         txtcep.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtcep.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcepActionPerformed(evt);
+            }
+        });
+        txtcep.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcepKeyPressed(evt);
+            }
+        });
 
         jLabel7.setBackground(new java.awt.Color(0, 0, 0));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -271,7 +287,7 @@ public class FrmCliente extends javax.swing.JFrame {
         cbuf.setBackground(new java.awt.Color(204, 204, 204));
         cbuf.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         cbuf.setForeground(new java.awt.Color(0, 0, 0));
-        cbuf.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PE", "PB", "SP", "RJ", "MA" }));
+        cbuf.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
 
         jLabel14.setBackground(new java.awt.Color(0, 0, 0));
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -746,6 +762,27 @@ public class FrmCliente extends javax.swing.JFrame {
     private void btnNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoActionPerformed
         new Utilitarios().LimpaTela(painel_dados);
     }//GEN-LAST:event_btnNovoActionPerformed
+
+    private void txtcepKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcepKeyPressed
+        //Programacao do keypress
+	 if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+         Clientes obj =  new Clientes();
+         ClientesDAO dao = new ClientesDAO();
+         obj = dao.buscaCep(txtcep.getText());
+         
+         txtend.setText(obj.getEndereco());
+         txtbairro.setText(obj.getBairro());
+         txtcidade.setText(obj.getCidade());
+         cbuf.setSelectedItem(obj.getUf());               
+         System.out.println(obj.getUf());
+         
+     }
+    }//GEN-LAST:event_txtcepKeyPressed
+
+    private void txtcepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcepActionPerformed
+      
+	
+    }//GEN-LAST:event_txtcepActionPerformed
 
     /**
      * @param args the command line arguments
