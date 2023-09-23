@@ -18,6 +18,7 @@ public class Funcionarios extends Clientes {
     
     //Getters e Setters
 
+    
     public String getSenha() {
         return senha;
     }

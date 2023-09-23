@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/view/FrmCliente.java</file>
-            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/dao/ClientesDAO.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/view/FrmFornecedores.java</file>
             <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/jdbc/ConnectionFactory.java</file>
             <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/jdbc/TesteConnecxao.java</file>
             <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/NewClass.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/Clientes.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/view/FrmCliente.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/dao/ClientesDAO.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/view/FrmFuncionarios.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/Funcionarios.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/dao/FornecedoresDAO.java</file>
+            <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/Fornecedores.java</file>
             <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/Utilitarios.java</file>
             <file>file:/C:/temp/NetBenas-workspace/projeto-pdv-vendas/src/br/com/projeto/model/WebServiceCep.java</file>
         </group>
